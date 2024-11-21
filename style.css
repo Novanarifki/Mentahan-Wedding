@@ -17,7 +17,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(img/bg-prewed.jpg);
+  background-image: url(img/bg-masterw.jpg);
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -30,14 +30,21 @@ body {
 }
 
 .hero h1,
+.hero h3
 .hero h4,
 .hero p {
   text-shadow: var(--shadow);
 }
 
 .hero h1 {
+  color: #f14e95;
   font-family: "Sacramento", cursive;
   font-size: 6rem;
+}
+.hero h3{
+  color: #cccccc;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.6rem;
 }
 
 .hero h4 {
@@ -206,6 +213,56 @@ body {
   font-size: 1rem;
   font-weight: 300;
 }
+.card .input {
+  float: left;
+  width: 90%;
+  border: 1px solid #63b4b8;
+  padding: 12px 12px;
+  outline: none;
+  color:  #aba7a7;
+  font-size: 18px;
+  border-radius: 5px 5px;
+  box-sizing: border-box;
+}
+
+
+
+.card .toolcliptext {
+ /* visibility: hidden; */
+  background-color: #ffb319;
+  color: #000;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 0;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 18px;
+}
+
+.card .toolcliptext::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.btn-copy:hover .toolcliptext {
+  visibility: visible;
+  opacity: 1;
+}
+.list-group{
+  color: aqua;
+}
+
 
 .timeline {
   list-style: none;
