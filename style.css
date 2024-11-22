@@ -1,5 +1,5 @@
 :root {
-  --pink: #f14e95;
+  --pink: #564ef1;
   --bg: #0a0a0a;
   --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
 }
@@ -17,11 +17,10 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(img/bg-masterw.jpg);
+  background-image: url(img/bg-profil.jpg);
   background-size: cover;
   background-position: center;
   z-index: -1;
-  filter: grayscale();
 }
 
 .hero {
@@ -37,12 +36,12 @@ body {
 }
 
 .hero h1 {
-  color: #f14e95;
+  color: #564ef1;
   font-family: "Sacramento", cursive;
   font-size: 6rem;
 }
 .hero h3{
-  color: #cccccc;
+  color: #0a0a0a;
   font-family: 'Times New Roman', Times, serif;
   font-size: 1.6rem;
 }
